@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Leads" verbose="5" parallel="tests" thread-count="5">
+  <test thread-count="2" name="Leaftaps" parallel="classes">
+    <classes>
+      <class name="week2.day1.testng.EditLead"/>
+      <class name="week2.day1.testng.DuplicateLead"/>
+      <class name="week2.day1.testng.CreateLead"/>
+      <class name="week2.day1.testng.DeleteLead"/>
+      <class name="week2.day1.testng.MergeLead"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="2" name="Salesforce" parallel="classes">
+    <classes>
+      <class name="week2.day1.testng.CreateLeadSalesforce"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->
